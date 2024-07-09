@@ -2,6 +2,7 @@
 Страница с генератором пароля, можно управлять параметрами генерируемых значений и длиной пароля.
 
 Превью:
+
 ![browser_kJ3eOWT1c3](https://github.com/IndyukovAnton/PasswordGeneratorJS/assets/133742300/229036c7-f721-472a-ac02-3cad1ce2ec86)
 
 
