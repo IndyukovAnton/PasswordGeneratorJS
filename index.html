@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Password Generator</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<div class="container">
-		<div class="main">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Generator</title>
+		<link rel="stylesheet" href="./styles/normalize.css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+	</head>
+	<body>
+		<div class="generator__container container">
 			<h1 class="title">Password Generator</h1>
-			
-			<div class="setting">
-				Параметры:
-				<labe><input checked type="checkbox" name="a_z">a-z</label>
-				<labe><input type="checkbox" name="A_Z"> A-Z</label>
-				<labe><input type="checkbox" name="0_9">0-9</label>
-				<labe><input type="checkbox" name="ss">special symbols</label>
-				<labe><input type="range" min="6" max="12" value="6">Длина: <span class="lenght">6</span></label>
+			<div class="generator__body">
+				<div class="settings">
+					<p>Параметры:</p>
+					<div class="settings__item">
+						<input class="custom-checkbox a-z" checked type="checkbox" name="a_z" />
+						<label for='a-z'>a-z</label>
+					</div>
+
+					<div class="settings__item">
+						<input class="custom-checkbox A-Z" type="checkbox" name="A_Z"/>
+						<label for="A-Z"">A-Z</label>
+					</div>
+
+					<div class="settings__item">
+						<input class="custom-checkbox 0-9" type="checkbox" name="0_9" />
+						<label for='0-9'>0-9</label>
+					</div>
+
+					<div class="settings__item">
+						<input class="custom-checkbox ss" type="checkbox" name="ss" />
+						<label for='ss'>special symbols</label>
+					</div>
+
+					<input class='password__length' type="range" min="6" max="12" value="8" />
+					<label for='password__length'>
+						Длина: <span class="length">8</span> 
+					</label>
+				</div>
+				<div class="password"></div>
 			</div>
-
-			<button class="generate">Сгенерировать</button>
-			
-			<p class="password"></p>
+			<button class="btn__generate">Сгенерировать</button>
 		</div>
-	</div>
 
-	<script src="script.js"></script>
-</body>
+		<script src="./scripts/script.js"></script>
+	</body>
 </html>
