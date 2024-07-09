@@ -1,8 +1,9 @@
 # PasswordGeneratorJS
 Страница с генератором пароля, можно управлять параметрами генерируемых значений и длиной пароля.
 
-Текущий дизайн: 
-![image](https://github.com/IndyukovAnton/PasswordGeneratorJS/assets/133742300/d82cb09b-8fff-48a7-83d3-474e8df744d8)
+Превью:
+![browser_kJ3eOWT1c3](https://github.com/IndyukovAnton/PasswordGeneratorJS/assets/133742300/229036c7-f721-472a-ac02-3cad1ce2ec86)
+
 
 
 
