@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Password Generator</title>
-		<link rel="stylesheet" href="./styles/normalize.css" />
-		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./src/css/main.css" />
 	</head>
 	<body>
 		<div class="generator__container container">
-			<h1 class="title">Password Generator</h1>
+			<h1 class="title">Генератор пароля</h1>
 			<div class="generator__body">
 				<div class="settings">
-					<p>Параметры:</p>
+					<div class="settings__header">Параметры:</div>
 					<div class="settings__item">
 						<input class="custom-checkbox a-z" checked type="checkbox" name="a_z" />
 						<label for='a-z'>a-z</label>
@@ -33,7 +32,7 @@
 						<label for='ss'>special symbols</label>
 					</div>
 
-					<input class='password__length' type="range" min="6" max="12" value="8" />
+					<input class='custom-range password__length' type="range" min="6" max="12" value="8" />
 					<label for='password__length'>
 						Длина: <span class="length">8</span> 
 					</label>
@@ -43,6 +42,6 @@
 			<button class="btn__generate">Сгенерировать</button>
 		</div>
 
-		<script src="./scripts/script.js"></script>
+		<script src="./src/js/main.js"></script>
 	</body>
 </html>

@@ -1,0 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(to right,#982c2c, #2b6bda);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100dvh;
+	padding: 0 20px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	max-width: 650px;
+	width: 100%;
+}

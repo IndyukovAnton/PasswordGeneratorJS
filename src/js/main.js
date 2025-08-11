@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', ()=> {
 		length_indicator.textContent = length_controller.value;
 	})
 
+	const countPasswords = 5;
+
 	btn_generate.addEventListener('click', ()=> {
 		let limit = length_controller.value;
 
@@ -36,12 +38,27 @@ document.addEventListener('DOMContentLoaded', ()=> {
 			if(checkbox.checked) { settings.push(checkbox.name); }
 		})
 
+		
+
 		let symbols = '';
 		settings.forEach(parameter => {
 			symbols += parameters[parameter];
 		})
 
-		let password = generate_password(symbols, limit);
-		out_password.textContent = password;
+		out_password.innerHTML = ''
+
+		for (let i = 0; i < countPasswords; i++) {
+			let password = generate_password(symbols, limit);
+
+			addPassword(out_password, password)
+		}
 	})
 })
+
+function addPassword(parent, password) {
+	const passwordEl = document.createElement('div')
+	passwordEl.classList.add('password-item')
+	passwordEl.textContent = password
+
+	parent.append(passwordEl)
+}
